@@ -1,0 +1,150 @@
+.special {
+    &__top {
+        @include flex-separate;
+        @include flex-align-center;
+
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+
+    &__pic {
+        margin-right: 45px;
+        width: 188px;
+        height: 61px;
+        background-image: url(../img/car.svg);
+    }
+
+    &__heading {
+        margin: 0;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+}
+
+.goods {
+    @include flex-separate;
+    margin-bottom: 100px;
+}
+
+.goods-card {
+    @include flex-vertical-center;
+    flex: calc(25% - 23px) 0 1;
+    padding: 25px 30px;
+    background-color: $white;
+
+    &__title {
+        margin: 20px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: $dark;
+    }
+
+    &__cost {
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $black;
+    }
+
+    &__btn {
+        width: 130px;
+        padding: 9px 40px;
+        background-color: $accent;
+        border: none;
+        color: $white;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        border-radius: 30px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.special__bottom {
+    @include flex-separate;
+    margin-bottom: 133px;
+}
+
+.bonus {
+    flex: calc(50% - 15px) 0 1;
+    padding: 25px 40px;
+    background-color: $accent;
+    background-image: url(../img/envelope.svg);
+    background-repeat: no-repeat;
+    background-position: right 45px center;
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: $white;
+    }
+
+    &__descr {
+        max-width: 235px;
+        margin: 0;
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $white;
+    }
+
+    &__input {
+        padding: 9px 25px;
+        background: $white;
+        border-radius: 30px;
+        border: none;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 16px;
+            color: #C4C4C4;
+        }
+    }
+}
+
+.invite {
+    flex: calc(50% - 15px) 0 1;
+    padding: 25px 40px;
+    background-color: $accent;
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: $white;
+    }
+
+    &__descr {
+        max-width: 235px;
+        margin: 0;
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $white;
+    }
+
+    &__btn {
+        padding: 9px 28px;
+        background-color: $accent;
+        border: 2px solid $white;
+        border-radius: 30px;
+        color: $white;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
