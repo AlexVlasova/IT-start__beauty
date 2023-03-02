@@ -1,3 +1,125 @@
+$gray: #EFEFEF;
+$accent: #66C05D;
+$dark: #333333;
+$black: #000000;
+$white: #fff;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+// Основные стили
 body {
-    background-color: #fff;
+    background-color: $gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-separate {
+    display: flex;
+    justify-content: space-between;
+}
+
+// Header
+
+.info-links {
+    padding: 17px 0 16px;
+
+    &__item {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 16px;
+        color: $dark;
+        text-decoration: none;
+
+        &:active {
+            color: $accent;
+        }
+    }
+}
+
+.header__main {
+    padding: 20px 0;
+    margin-bottom: 1px;
+    background-color: $white;
+}
+
+.logo {
+    &__pic {
+    margin-right: 20px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+        color: $accent;
+    }
+}
+
+.call-back {
+    &__phone {
+        display: block;
+        margin-right: 40px;
+
+        font-size: 16px;
+        line-height: 19px;
+        color: $black;
+        text-decoration: none;
+
+        &:active {
+            color: $accent;
+            text-decoration: underline;
+        }
+    }
+
+    &__btn {
+        padding: 12px 26px 13px;
+        border: 2px solid $accent;
+        border-radius: 40px;
+        background-color: $white;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: $accent;
+        }
+    }
+}
+
+.header__bottom {
+    background-color: $white;
 }
